@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="header-container" class="ui inverted segment">
+        <div class="ui inverted secondary menu">
+        <a href="./proyecto.html"><h1 id="header-text">ShinyDex</h1></a>
+        </div>
+        <form class="flex-form" action="">
+            <input id="pokemon-input" type="text" required minlength="1" maxlength="30" placeholder="Search Pokemon Name">
+            <input id="btn-submit" type="button" value="Send">
+        </form>
+    </div>
+    <form id="first-form">
+        <div id="container">
+            <div id="poke-container" class="ui cards">
+            </div>
+        </div> 
+    </form>
+    <form id="spinner-form" style="display: none;">
+        <div class='spinner'></div>
+    </form>
+    <form id="second-form" style="display:none;"">
+        <div id="card">
+            <img src="" id="poke-img">
+            <div class="card-container">
+                <p id="name"></p>
+                <p class="poke-id item-content">ID:</p>
+                <p class="item-info" id="content-id"></p>
+                <p class="poke-height item-content">Height:</p>
+                <p class="item-info" id="content-height"></p>
+                <p class="poke-weight item-content">Weight:</p>
+                <p class="item-info" id="content-weight"></p>
+                <p class="poke-type item-content">Type:</p>
+                <p class="item-info" id="content-type"></p>
+            </div>
+        </div>
+    </form>
+    <script src="./main.js"></script>
+</body>
+</html>
